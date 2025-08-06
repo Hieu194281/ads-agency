@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useContext } from 'react';
 import { LanguageContext } from '@/app/context/LanguageContext';
 import LanguageSwitcher from '@/app/components/LanguageSwitcher';
+import ServicesSection from './components/ServicesSection';
 
 const translations = {
   en: {
@@ -183,6 +184,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Services Section */}
+      <ServicesSection/>
 
       {/* Why Us Section */}
       <section id="why-us" className="py-20 bg-gray-100">
