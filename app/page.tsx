@@ -29,30 +29,30 @@ export default function Home() {
 
   return (
     <>
-    {/* Header/Navigation */}
-    <header className="fixed w-full bg-white/80 backdrop-blur-sm z-50">
+      {/* Header/Navigation */}
+      <header className="fixed w-full bg-white/80 backdrop-blur-sm z-50">
         <div className="container mx-auto px-6 py-4">
-            <div className="flex justify-between items-center">
-                <div className="text-2xl font-bold text-indigo-600">
-                    <a href="#top">ADS Agency</a>
-                </div>
-
-                <nav className="hidden md:flex items-center space-x-8">
-                    <a href="#top" className="nav-link text-gray-700 hover:text-indigo-600">{t.home}</a>
-                    <a href="#services" className="nav-link text-gray-700 hover:text-indigo-600">{t.services}</a>
-                    <a href="#why-us" className="nav-link text-gray-700 hover:text-indigo-600">{t.whyUs}</a>
-                    <a href="#about" className="nav-link text-gray-700 hover:text-indigo-600">{t.about}</a>
-                    <a href="#contact"
-                        className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition">{t.contact}</a>
-                    <LanguageSwitcher />
-                </nav>
-
-                <button className="md:hidden focus:outline-none">
-                    <i className="fas fa-bars text-2xl text-gray-700"></i>
-                </button>
+          <div className="flex justify-between items-center">
+            <div className="text-2xl font-bold text-indigo-600">
+              <a href="#top">ADS Agency</a>
             </div>
+
+            <nav className="hidden md:flex items-center space-x-8">
+              <a href="#top" className="nav-link text-gray-700 hover:text-indigo-600">{t.home}</a>
+              <a href="#services" className="nav-link text-gray-700 hover:text-indigo-600">{t.services}</a>
+              <a href="#why-us" className="nav-link text-gray-700 hover:text-indigo-600">{t.whyUs}</a>
+              <a href="#about" className="nav-link text-gray-700 hover:text-indigo-600">{t.about}</a>
+              <a href="#contact"
+                className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition">{t.contact}</a>
+              <LanguageSwitcher />
+            </nav>
+
+            <button className="md:hidden focus:outline-none">
+              <i className="fas fa-bars text-2xl text-gray-700"></i>
+            </button>
+          </div>
         </div>
-    </header>
+      </header>
 
       {/* Hero Section */}
       <section id="top" className="hero-gradient pt-32 pb-20 text-white">
