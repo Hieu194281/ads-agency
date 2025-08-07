@@ -12,7 +12,7 @@ import { useContactForm } from './hooks/useContactForm';
 export default function Home() {
   const context = useContext(LanguageContext);
   const t = translations[context?.language as keyof typeof translations || 'en'];
-  
+
   // Contact form logic
   const {
     formData,
@@ -30,9 +30,10 @@ export default function Home() {
       <header className="fixed w-full bg-white/80 backdrop-blur-sm z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="text-2xl font-bold text-indigo-600">
+            <div className="text-2xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 text-transparent bg-clip-text drop-shadow-md">
               <a href="#top">ADS Agency</a>
             </div>
+
 
             <nav className="hidden md:flex items-center space-x-8">
               <a href="#top" className="nav-link text-gray-700 hover:text-indigo-600">{t.nav.home}</a>
@@ -74,23 +75,23 @@ export default function Home() {
       </section>
 
       {/* Clients/Logos Section */}
-      <section className="py-12 bg-gray-50">
+      {/* <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-6">
           <h3 className="text-center text-gray-500 mb-10">{t.hero.trustedBy}</h3>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-            <Image src="https://via.placeholder.com/150x60?text=Brand+1" alt="Client Logo"
+            <Image src="/logo.png" alt="Client Logo"
               className="h-8 opacity-60 hover:opacity-100 transition" width={150} height={60} />
-            <Image src="https://via.placeholder.com/150x60?text=Brand+2" alt="Client Logo"
+            <Image src="/logo.png" alt="Client Logo"
               className="h-8 opacity-60 hover:opacity-100 transition" width={150} height={60} />
-            <Image src="https://via.placeholder.com/150x60?text=Brand+3" alt="Client Logo"
+            <Image src="/logo.png" alt="Client Logo"
               className="h-8 opacity-60 hover:opacity-100 transition" width={150} height={60} />
-            <Image src="https://via.placeholder.com/150x60?text=Brand+4" alt="Client Logo"
+            <Image src="/logo.png" alt="Client Logo"
               className="h-8 opacity-60 hover:opacity-100 transition" width={150} height={60} />
-            <Image src="https://via.placeholder.com/150x60?text=Brand+5" alt="Client Logo"
+            <Image src="/logo.png" alt="Client Logo"
               className="h-8 opacity-60 hover:opacity-100 transition" width={150} height={60} />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Services Section */}
       <section id="services" className="py-20 bg-white">
@@ -172,9 +173,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
       {/* Services Section */}
-      <ServicesSection/>
+      <ServicesSection />
 
       {/* Why Us Section */}
       <section id="why-us" className="py-20 bg-gray-100">
@@ -270,7 +271,7 @@ export default function Home() {
               <p className="mb-8 opacity-90">{t.about.description2}</p>
 
               <div className="flex items-center space-x-4 mt-8 pt-6 border-t border-white/20">
-                <Image src="https://via.placeholder.com/80?text=CEO" alt="Team Member"
+                <Image src="/avatar.png" alt="Team Member"
                   className="w-16 h-16 rounded-full border-2 border-white" width={80} height={80} />
                 <div>
                   <p className="font-semibold text-lg">{t.about.founder.name}</p>
@@ -291,29 +292,52 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
             <div className="md:flex">
-              <div className="md:w-1/2 bg-indigo-600 text-white p-10">
-                <h2 className="text-3xl font-bold mb-6">{t.contact.title}</h2>
-                <p className="mb-8">{t.contact.subtitle}</p>
+              <div className="md:w-1/2 bg-indigo-600 text-white p-10 gap-6">
+                <div>
+                  <h2 className="text-3xl font-bold mb-6">{t.contact.title}</h2>
+                  <p className="mb-8">{t.contact.subtitle}</p>
 
-                <div className="space-y-6">
-                  <div className="flex items-start">
-                    <div className="text-2xl mr-4">
-                      <i className="fas fa-phone"></i>
+                  <div className="space-y-6">
+                    <div className="flex items-start">
+                      <div className="text-2xl mr-4">
+                        <i className="fas fa-phone"></i>
+                      </div>
+                      <div>
+                        <p className="font-semibold">{t.contact.contactInfo.phone}</p>
+                        <p>(123) 456-7890</p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="font-semibold">{t.contact.contactInfo.phone}</p>
-                      <p>(123) 456-7890</p>
+
+                    <div className="flex items-start">
+                      <div className="text-2xl mr-4">
+                        <i className="fas fa-envelope"></i>
+                      </div>
+                      <div>
+                        <p className="font-semibold">{t.contact.contactInfo.email}</p>
+                        <p>hello@adsagency.com</p>
+                      </div>
                     </div>
                   </div>
+                </div>
+                <div className='mt-8'>
+                  <h2 className="text-3xl font-bold mb-6">{t.contact.title2}</h2>
 
-                  <div className="flex items-start">
-                    <div className="text-2xl mr-4">
-                      <i className="fas fa-envelope"></i>
+                  <div className="space-y-6">
+                    <div className="flex items-start">
+                      <a href="https://t.me/ads_agency88" target="_blank" rel="noopener noreferrer">
+                        <div className="text-3xl mr-4">
+                          <i className="fab fa-telegram-plane"></i>
+                        </div>
+                      </a>
+
+                      <a href="https://api.whatsapp.com/qr/NHL6E2RK3MTWP1?autoload=1&app_absent=0" target="_blank" rel="noopener noreferrer">
+                        <div className="text-3xl mr-4">
+                          <i className="fab fa-whatsapp"></i>
+                        </div>
+                      </a>
+
                     </div>
-                    <div>
-                      <p className="font-semibold">{t.contact.contactInfo.email}</p>
-                      <p>hello@adsagency.com</p>
-                    </div>
+
                   </div>
                 </div>
               </div>
@@ -342,49 +366,49 @@ export default function Home() {
                 <form id="contactForm" className="space-y-6" onSubmit={handleSubmit}>
                   <div>
                     <label htmlFor="name" className="block text-gray-700 font-medium mb-2">{t.contact.form.name}</label>
-                    <input 
-                      type="text" 
-                      id="name" 
+                    <input
+                      type="text"
+                      id="name"
                       name="name"
                       value={formData.name}
                       onChange={handleInputChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      required 
+                      required
                       disabled={isSubmitting}
                     />
                   </div>
 
                   <div>
                     <label htmlFor="email" className="block text-gray-700 font-medium mb-2">{t.contact.form.email}</label>
-                    <input 
-                      type="email" 
-                      id="email" 
+                    <input
+                      type="email"
+                      id="email"
                       name="email"
                       value={formData.email}
                       onChange={handleInputChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      required 
+                      required
                       disabled={isSubmitting}
                     />
                   </div>
 
                   <div>
                     <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">{t.contact.form.phone}</label>
-                    <input 
-                      type="tel" 
-                      id="phone" 
+                    <input
+                      type="tel"
+                      id="phone"
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                       disabled={isSubmitting}
                     />
                   </div>
 
                   <div>
                     <label htmlFor="service" className="block text-gray-700 font-medium mb-2">{t.contact.form.service}</label>
-                    <select 
-                      id="service" 
+                    <select
+                      id="service"
                       name="service"
                       value={formData.service}
                       onChange={handleInputChange}
@@ -401,9 +425,9 @@ export default function Home() {
 
                   <div>
                     <label htmlFor="message" className="block text-gray-700 font-medium mb-2">{t.contact.form.message}</label>
-                    <textarea 
-                      id="message" 
-                      name="message" 
+                    <textarea
+                      id="message"
+                      name="message"
                       rows={4}
                       value={formData.message}
                       onChange={handleInputChange}
@@ -412,14 +436,13 @@ export default function Home() {
                     ></textarea>
                   </div>
 
-                  <button 
+                  <button
                     type="submit"
                     disabled={isSubmitting}
-                    className={`w-full py-3 px-6 rounded-md transition font-semibold shadow-sm ${
-                      isSubmitting 
-                        ? 'bg-gray-400 cursor-not-allowed' 
-                        : 'bg-indigo-600 hover:bg-indigo-700 text-white'
-                    }`}
+                    className={`w-full py-3 px-6 rounded-md transition font-semibold shadow-sm ${isSubmitting
+                      ? 'bg-gray-400 cursor-not-allowed'
+                      : 'bg-indigo-600 hover:bg-indigo-700 text-white'
+                      }`}
                   >
                     {isSubmitting ? (
                       <div className="flex items-center justify-center">
@@ -471,22 +494,33 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4">{t.footer.connectWithUs}</h4>
               <div className="flex space-x-4 mb-4">
-                <a href="#" className="text-gray-400 hover:text-white transition text-xl"><i
+                <a href="https://t.me/ads_agency88" target="_blank" rel="noopener noreferrer">
+                  <div className="text-3xl">
+                    <i className="fab fa-telegram-plane"></i>
+                  </div>
+                </a>
+
+                <a href="https://api.whatsapp.com/qr/NHL6E2RK3MTWP1?autoload=1&app_absent=0" target="_blank" rel="noopener noreferrer">
+                  <div className="text-3xl mr-4">
+                    <i className="fab fa-whatsapp"></i>
+                  </div>
+                </a>
+                {/* <a href="#" className="text-gray-400 hover:text-white transition text-xl"><i
                   className="fab fa-facebook-f"></i></a>
                 <a href="#" className="text-gray-400 hover:text-white transition text-xl"><i
                   className="fab fa-twitter"></i></a>
                 <a href="#" className="text-gray-400 hover:text-white transition text-xl"><i
                   className="fab fa-instagram"></i></a>
                 <a href="#" className="text-gray-400 hover:text-white transition text-xl"><i
-                  className="fab fa-linkedin-in"></i></a>
+                  className="fab fa-linkedin-in"></i></a> */}
               </div>
-              <p className="text-gray-400">{t.footer.newsletter}</p>
+              {/* <p className="text-gray-400">{t.footer.newsletter}</p>
               <form className="mt-2 flex">
                 <input type="email" placeholder={t.footer.emailPlaceholder}
                   className="px-3 py-2 bg-gray-800 text-white rounded-l-md focus:outline-none w-full" />
                 <button type="submit" className="bg-blue-600 px-4 py-2 rounded-r-md hover:bg-blue-700 transition"><i
                   className="fas fa-paper-plane"></i></button>
-              </form>
+              </form> */}
             </div>
           </div>
 

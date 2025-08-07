@@ -19,9 +19,9 @@ export const en = {
 
   // Services Section
   services: {
-    title: "Our Facebook Advertising Services",
+    title: "Our Facebook Advertising Account For Rent Services",
     subtitle: "We specialize in high-converting Facebook ad campaigns tailored to your business goals.",
-    
+
     // Main Services
     audienceTargeting: {
       title: "Audience Targeting",
@@ -54,8 +54,8 @@ export const en = {
     // Facebook Rental Service
     rentalService: {
       title: "Facebook Rental Service",
-      description: "Facebook Ad Account Rental Service In the vast digital landscape, one platform connects people across the globe — Facebook. For businesses, it's more than just a social network; it's a powerful marketing channel. Unlock your advertising potential with Lucky Agency Media's Facebook ad account rental service. Whether you're facing restrictions or simply want a smoother experience — we've got your back.",
-      
+      description: "Facebook Ad Account Rental Service In the vast digital landscape, one platform connects people across the globe — Facebook. For businesses, it's more than just a social network; it's a powerful marketing channel. Unlock your advertising potential with ADS Agency Media's Facebook ad account rental service. Whether you're facing restrictions or simply want a smoother experience — we've got your back.",
+
       features: {
         allProduct: {
           title: "All Product",
@@ -92,7 +92,7 @@ export const en = {
 
       facebookPageService: {
         title: "Facebook Page Service",
-        description: "Lucky Agency Media offers effective advertising services through a network of highly trusted fanpages. You can launch your campaigns without facing common issues such as restrictions, limited delivery, or disapprovals. Our experienced support team is fast, reliable, and ready to assist with every aspect of your advertising campaigns.",
+        description: "ADS Agency Media offers effective advertising services through a network of highly trusted fanpages. You can launch your campaigns without facing common issues such as restrictions, limited delivery, or disapprovals. Our experienced support team is fast, reliable, and ready to assist with every aspect of your advertising campaigns.",
         note: "*Always reserve a stable number of >1000 accounts with spending history ( Accept BH, WH, GH : Gambling, Crypto, App, NFT, Finance..... ), Support campaign optimization for customers - 24/7 Support."
       }
     }
@@ -102,7 +102,7 @@ export const en = {
   whyUs: {
     title: "Why Choose ADS Agency",
     subtitle: "We deliver measurable results through data-driven Facebook advertising strategies.",
-    
+
     provenResults: {
       title: "Proven Results",
       description: "We've generated over $10M in revenue for our clients through Facebook advertising campaigns with an average 5x ROAS."
@@ -155,7 +155,9 @@ export const en = {
   contact: {
     title: "Get In Touch",
     subtitle: "Ready to scale your business with Facebook advertising? Fill out the form and we'll get back to you within 24 hours.",
-    
+
+    title2: 'Connect With Us',
+
     contactInfo: {
       phone: "Phone",
       email: "Email",
@@ -169,14 +171,16 @@ export const en = {
       service: "Service Interested In",
       message: "Your Message",
       submit: "Submit Request",
-      
+
       serviceOptions: {
         select: "Select a service",
         facebookAds: "Facebook Advertising",
         instagramAds: "Instagram Advertising",
         fullManagement: "Full Campaign Management",
         audit: "Account Audit"
-      }
+      },
+      success: "Thank you! Your message has been sent successfully. We will get back to you as soon as possible.",
+      error: "An error occurred while sending the message. Please try again later."
     }
   },
 
@@ -184,7 +188,7 @@ export const en = {
   facebookRental: {
     title: "Facebook Rental Service",
     subtitle: "Rent high-quality Facebook accounts for your advertising campaigns",
-    
+
     verifiedAccounts: {
       title: "Verified Accounts",
       description: "All our Facebook accounts are fully verified with real profiles and established history",
@@ -219,7 +223,7 @@ export const en = {
   facebookPage: {
     title: "Facebook Page Service",
     subtitle: "Professional Facebook page management and optimization services",
-    
+
     management: {
       title: "Complete Page Management",
       contentCreation: {
@@ -247,7 +251,7 @@ export const en = {
     newsletter: "Subscribe to our newsletter",
     emailPlaceholder: "Your email",
     copyright: "© 2023 ADS Agency. All rights reserved.",
-    
+
     links: {
       privacyPolicy: "Privacy Policy",
       termsOfService: "Terms of Service",

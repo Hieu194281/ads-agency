@@ -19,9 +19,9 @@ export const vi = {
 
   // Services Section
   services: {
-    title: "Dịch Vụ Quảng Cáo Facebook Của Chúng Tôi",
+    title: "Dịch Vụ Cho Thuê Tài Khoản Quảng Cáo Facebook Của Chúng Tôi",
     subtitle: "Chúng tôi chuyên về các chiến dịch quảng cáo Facebook có tỷ lệ chuyển đổi cao được thiết kế riêng cho mục tiêu kinh doanh của bạn.",
-    
+
     // Main Services
     audienceTargeting: {
       title: "Nhắm Mục Tiêu Khán Giả",
@@ -54,8 +54,8 @@ export const vi = {
     // Facebook Rental Service
     rentalService: {
       title: "Dịch Vụ Thuê Facebook",
-      description: "Dịch Vụ Thuê Tài Khoản Quảng Cáo Facebook Trong bối cảnh kỹ thuật số rộng lớn, có một nền tảng kết nối mọi người trên toàn cầu — Facebook. Đối với các doanh nghiệp, đây không chỉ là một mạng xã hội; mà là một kênh tiếp thị mạnh mẽ. Mở khóa tiềm năng quảng cáo của bạn với dịch vụ thuê tài khoản quảng cáo Facebook của Lucky Agency Media. Dù bạn đang gặp phải hạn chế hay chỉ đơn giản muốn có trải nghiệm mượt mà hơn — chúng tôi sẽ hỗ trợ bạn.",
-      
+      description: "Dịch Vụ Thuê Tài Khoản Quảng Cáo Facebook Trong bối cảnh kỹ thuật số rộng lớn, có một nền tảng kết nối mọi người trên toàn cầu — Facebook. Đối với các doanh nghiệp, đây không chỉ là một mạng xã hội; mà là một kênh tiếp thị mạnh mẽ. Mở khóa tiềm năng quảng cáo của bạn với dịch vụ thuê tài khoản quảng cáo Facebook của ADS Media. Dù bạn đang gặp phải hạn chế hay chỉ đơn giản muốn có trải nghiệm mượt mà hơn — chúng tôi sẽ hỗ trợ bạn.",
+
       features: {
         allProduct: {
           title: "Tất Cả Sản Phẩm",
@@ -92,7 +92,7 @@ export const vi = {
 
       facebookPageService: {
         title: "Dịch Vụ Trang Facebook",
-        description: "Lucky Agency Media cung cấp dịch vụ quảng cáo hiệu quả thông qua mạng lưới các fanpage được tin tưởng cao. Bạn có thể khởi chạy chiến dịch mà không gặp phải các vấn đề thường gặp như hạn chế, phân phối hạn chế hoặc bị từ chối. Đội ngũ hỗ trợ giàu kinh nghiệm của chúng tôi nhanh chóng, đáng tin cậy và sẵn sàng hỗ trợ mọi khía cạnh của chiến dịch quảng cáo của bạn.",
+        description: "ADS Media cung cấp dịch vụ quảng cáo hiệu quả thông qua mạng lưới các fanpage được tin tưởng cao. Bạn có thể khởi chạy chiến dịch mà không gặp phải các vấn đề thường gặp như hạn chế, phân phối hạn chế hoặc bị từ chối. Đội ngũ hỗ trợ giàu kinh nghiệm của chúng tôi nhanh chóng, đáng tin cậy và sẵn sàng hỗ trợ mọi khía cạnh của chiến dịch quảng cáo của bạn.",
         note: "*Luôn dự trữ số lượng ổn định >1000 tài khoản có lịch sử chi tiêu (Chấp nhận BH, WH, GH: Cờ bạc, Crypto, App, NFT, Tài chính...), Hỗ trợ tối ưu hóa chiến dịch cho khách hàng - Hỗ trợ 24/7."
       }
     }
@@ -102,7 +102,7 @@ export const vi = {
   whyUs: {
     title: "Tại Sao Chọn ADS Agency",
     subtitle: "Chúng tôi mang lại kết quả có thể đo lường thông qua các chiến lược quảng cáo Facebook dựa trên dữ liệu.",
-    
+
     provenResults: {
       title: "Kết Quả Đã Được Chứng Minh",
       description: "Chúng tôi đã tạo ra hơn 10 triệu đô la doanh thu cho khách hàng thông qua các chiến dịch quảng cáo Facebook với ROAS trung bình 5x."
@@ -155,7 +155,9 @@ export const vi = {
   contact: {
     title: "Liên Hệ",
     subtitle: "Sẵn sàng mở rộng doanh nghiệp của bạn với quảng cáo Facebook? Điền vào biểu mẫu và chúng tôi sẽ liên hệ lại với bạn trong vòng 24 giờ.",
-    
+
+    title2: 'Kết nối với chúng tôi',
+
     contactInfo: {
       phone: "Điện Thoại",
       email: "Email",
@@ -169,14 +171,16 @@ export const vi = {
       service: "Dịch Vụ Quan Tâm",
       message: "Tin Nhắn Của Bạn",
       submit: "Gửi Yêu Cầu",
-      
+
       serviceOptions: {
         select: "Chọn một dịch vụ",
         facebookAds: "Quảng Cáo Facebook",
         instagramAds: "Quảng Cáo Instagram",
         fullManagement: "Quản Lý Chiến Dịch Đầy Đủ",
         audit: "Kiểm Tra Tài Khoản"
-      }
+      },
+      success: "Cảm ơn bạn! Tin nhắn đã được gửi thành công. Chúng tôi sẽ liên hệ lại sớm nhất có thể.",
+      error: "Đã có lỗi xảy ra khi gửi tin nhắn. Vui lòng thử lại sau."
     }
   },
 
@@ -184,7 +188,7 @@ export const vi = {
   facebookRental: {
     title: "Dịch Vụ Thuê Facebook",
     subtitle: "Thuê tài khoản Facebook chất lượng cao cho các chiến dịch quảng cáo của bạn",
-    
+
     verifiedAccounts: {
       title: "Tài Khoản Đã Xác Minh",
       description: "Tất cả tài khoản Facebook của chúng tôi đều được xác minh đầy đủ với hồ sơ thật và lịch sử đã thiết lập",
@@ -219,7 +223,7 @@ export const vi = {
   facebookPage: {
     title: "Dịch Vụ Trang Facebook",
     subtitle: "Dịch vụ quản lý và tối ưu hóa trang Facebook chuyên nghiệp",
-    
+
     management: {
       title: "Quản Lý Trang Hoàn Chỉnh",
       contentCreation: {
@@ -247,7 +251,7 @@ export const vi = {
     newsletter: "Đăng ký nhận bản tin của chúng tôi",
     emailPlaceholder: "Email của bạn",
     copyright: "© 2023 ADS Agency. Tất cả quyền được bảo lưu.",
-    
+
     links: {
       privacyPolicy: "Chính Sách Bảo Mật",
       termsOfService: "Điều Khoản Dịch Vụ",

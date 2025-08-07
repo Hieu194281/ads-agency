@@ -81,7 +81,7 @@ export const ServicesSection = () => {
                     <div className="grid md:grid-cols-2 gap-10 items-center">
                         <div>
                             <h2 className="text-3xl md:text-4xl font-bold mb-4">{t.facebookPage.title}</h2>
-                            <p className="text-gray-700 text-base leading-relaxed">
+                            <p className="text-gray-700 text-xl leading-relaxed">
                                 {t.services.rentalService.facebookPageService.description}
                             </p>
                         </div>
@@ -98,7 +98,7 @@ export const ServicesSection = () => {
                 </div>
 
                 <div className="space-y-6">
-                    <p className="text-gray-700 text-base leading-relaxed">
+                    <p className="text-gray-700 font-bold text-lg leading-relaxed text-center">
                         {t.services.rentalService.facebookPageService.note}
                     </p>
 
