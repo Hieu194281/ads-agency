@@ -206,7 +206,8 @@ export const vi = {
       phone: "Điện Thoại",
       email: "Email",
       location: "Địa Điểm",
-      whatsapp: 'WhatsApp'
+      whatsapp: 'WhatsApp',
+      telegram: 'Telegram'
     },
 
     scanToChat: {
@@ -221,6 +222,7 @@ export const vi = {
       service: "Dịch Vụ Quan Tâm",
       message: "Tin Nhắn Của Bạn",
       submit: "Gửi Yêu Cầu",
+      submitting: 'Đang gửi',
 
       serviceOptions: {
         select: "Chọn một dịch vụ",

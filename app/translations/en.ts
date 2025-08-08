@@ -206,7 +206,8 @@ export const en = {
       phone: "Phone",
       email: "Email",
       location: "Location",
-      whatsapp: 'WhatsApp'
+      whatsapp: 'WhatsApp',
+      telegram: 'Telegram'
     },
 
     scanToChat: {
@@ -222,6 +223,7 @@ export const en = {
       service: "Service Interested In",
       message: "Your Message",
       submit: "Submit Request",
+      submitting: 'Submitting Request',
 
       serviceOptions: {
         select: "Select a service",
