@@ -30,8 +30,10 @@ export default function Home() {
       <header className="fixed w-full bg-white/80 backdrop-blur-sm z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="text-2xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 text-transparent bg-clip-text drop-shadow-md">
-              <a href="#top">ADS Agency</a>
+            <div className="text-2xl font-bold text-transparent bg-clip-text drop-shadow-md">
+              <a href="#top">
+                <Image src="/logo.png" alt="ADS Agency Logo" width={100} height={50} />
+              </a>
             </div>
 
 
@@ -517,7 +519,9 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">ADS Agency</h3>
+              <div className="mb-4">
+                <Image src="/logo2.png" alt="ADS Agency Logo" width={100} height={50} />
+              </div>
               <p className="text-gray-400">{t.footer.description}</p>
             </div>
 
