@@ -54,7 +54,7 @@ export const vi = {
     // Facebook Rental Service
     rentalService: {
       title: "Dịch Vụ Thuê Facebook",
-      description: "Dịch Vụ Thuê Tài Khoản Quảng Cáo Facebook Trong bối cảnh kỹ thuật số rộng lớn, có một nền tảng kết nối mọi người trên toàn cầu — Facebook. Đối với các doanh nghiệp, đây không chỉ là một mạng xã hội; mà là một kênh tiếp thị mạnh mẽ. Mở khóa tiềm năng quảng cáo của bạn với dịch vụ thuê tài khoản quảng cáo Facebook của ADS Media. Dù bạn đang gặp phải hạn chế hay chỉ đơn giản muốn có trải nghiệm mượt mà hơn — chúng tôi sẽ hỗ trợ bạn.",
+      description: "Dịch Vụ Thuê Tài Khoản Quảng Cáo Facebook Trong bối cảnh kỹ thuật số rộng lớn, có một nền tảng kết nối mọi người trên toàn cầu — Facebook. Đối với các doanh nghiệp, đây không chỉ là một mạng xã hội; mà là một kênh tiếp thị mạnh mẽ. Mở khóa tiềm năng quảng cáo của bạn với dịch vụ thuê tài khoản quảng cáo Facebook của ADS Agency. Dù bạn đang gặp phải hạn chế hay chỉ đơn giản muốn có trải nghiệm mượt mà hơn — chúng tôi sẽ hỗ trợ bạn.",
 
       features: {
         allProduct: {
@@ -79,7 +79,7 @@ export const vi = {
         },
         contract: {
           title: "Hợp Đồng",
-          description: "Khiếu nại fanpage miễn phí, có hợp đồng kinh doanh."
+          description: "Khuyến mãi fanpage miễn phí, có hợp đồng kinh doanh."
         }
       },
 
@@ -92,8 +92,43 @@ export const vi = {
 
       facebookPageService: {
         title: "Dịch Vụ Trang Facebook",
-        description: "ADS Media cung cấp dịch vụ quảng cáo hiệu quả thông qua mạng lưới các fanpage được tin tưởng cao. Bạn có thể khởi chạy chiến dịch mà không gặp phải các vấn đề thường gặp như hạn chế, phân phối hạn chế hoặc bị từ chối. Đội ngũ hỗ trợ giàu kinh nghiệm của chúng tôi nhanh chóng, đáng tin cậy và sẵn sàng hỗ trợ mọi khía cạnh của chiến dịch quảng cáo của bạn.",
+        description: "ADS Agency cung cấp dịch vụ quảng cáo hiệu quả thông qua mạng lưới các fanpage được tin tưởng cao. Bạn có thể khởi chạy chiến dịch mà không gặp phải các vấn đề thường gặp như hạn chế, phân phối hạn chế hoặc bị từ chối. Đội ngũ hỗ trợ giàu kinh nghiệm của chúng tôi nhanh chóng, đáng tin cậy và sẵn sàng hỗ trợ mọi khía cạnh của chiến dịch quảng cáo của bạn.",
         note: "*Luôn dự trữ số lượng ổn định >1000 tài khoản có lịch sử chi tiêu (Chấp nhận BH, WH, GH: Cờ bạc, Crypto, App, NFT, Tài chính...), Hỗ trợ tối ưu hóa chiến dịch cho khách hàng - Hỗ trợ 24/7."
+      },
+      ourServices: {
+        title: "DỊCH VỤ CỦA CHÚNG TÔI",
+        stableAccounts: {
+          title: "Tài khoản quảng cáo Facebook ổn định",
+          description: "với lịch sử chi tiêu thực."
+        },
+        flexibleSpending: {
+          title: "Giới hạn chi tiêu hàng ngày linh hoạt:",
+          description: "$250 – $1.500 – không giới hạn tùy chọn."
+        },
+        fullSetup: {
+          title: "Thiết lập được chuẩn bị đầy đủ:",
+          description: "BM, fanpage, thẻ đã xác minh, Adspower, proxy sạch."
+        },
+        support: {
+          title: "Hỗ trợ kỹ thuật 24/7,",
+          description: "từ thiết lập đến mở rộng quy mô."
+        },
+        multiIndustry: {
+          title: "Hỗ trợ nhiều ngành dọc:",
+          description: "dịch vụ quảng cáo BH, WH, GH (trò chơi, tiền điện tử, thực phẩm bổ sung)..."
+        },
+        underYourEmail: {
+          title: "Tài khoản được tạo",
+          description: "dưới email của riêng bạn"
+        },
+        dedicatedTeam: {
+          title: "Đội ngũ chuyên dụng",
+          description: "(hỗ trợ, kỹ thuật, tài chính) cho mỗi khách hàng."
+        },
+        integratedTech: {
+          title: "Công nghệ Iridescent tích hợp:",
+          description: "thiết lập pixel, tự động hóa chiến dịch và giám sát trực tiếp."
+        }
       }
     }
   },
@@ -114,6 +149,15 @@ export const vi = {
     dedicatedSupport: {
       title: "Hỗ Trợ Tận Tâm",
       description: "Bạn sẽ làm việc trực tiếp với đội ngũ chuyên gia quảng cáo Facebook của chúng tôi, những người cung cấp giao tiếp minh bạch và cập nhật thường xuyên."
+    },
+
+    accountQuality: {
+      title: "Chất lượng tài khoản 100%",
+      description: "Đảm bảo chất lượng tài khoản và thay thế nếu có vấn đề phát sinh"
+    },
+    support: {
+      title: "Hỗ trợ 24/7",
+      description: "Hỗ trợ khách hàng suốt ngày đêm để giải quyết mọi vấn đề và đảm bảo chiến dịch của bạn hoạt động trơn tru."
     },
 
     performanceMetrics: {
@@ -161,9 +205,15 @@ export const vi = {
     contactInfo: {
       phone: "Điện Thoại",
       email: "Email",
-      location: "Địa Điểm"
+      location: "Địa Điểm",
+      whatsapp: 'WhatsApp'
     },
 
+    scanToChat: {
+      telegram: 'Quét để trò chuyện trên Telegram',
+      whatsapp: 'Quét để trò chuyện trên WhatsApp'
+    },
+    telegram: 'Telegram',
     form: {
       name: "Tên Của Bạn",
       email: "Địa Chỉ Email",
@@ -181,8 +231,15 @@ export const vi = {
       },
       success: "Cảm ơn bạn! Tin nhắn đã được gửi thành công. Chúng tôi sẽ liên hệ lại sớm nhất có thể.",
       error: "Đã có lỗi xảy ra khi gửi tin nhắn. Vui lòng thử lại sau."
-    }
+    },
   },
+
+  scanToChat: {
+    telegram: 'Quét để trò chuyện trên Telegram',
+    whatsapp: 'Quét để trò chuyện trên WhatsApp'
+  },
+
+
 
   // Facebook Rental Service
   facebookRental: {

@@ -77,22 +77,68 @@ export const ServicesSection = () => {
                 </div>
 
                 {/* Facebook Page Service Section */}
-                <div id="facebook-page-service" className="max-w-6xl mx-auto px-6 py-20">
-                    <div className="grid md:grid-cols-2 gap-10 items-center">
-                        <div>
-                            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t.facebookPage.title}</h2>
-                            <p className="text-gray-700 text-xl leading-relaxed">
-                                {t.services.rentalService.facebookPageService.description}
+                <div id="facebook-page-service" className="max-w-4xl mx-auto px-6 py-20">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+                            {t.services.rentalService.ourServices.title}
+                        </h2>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-6">
+                        <div className="flex items-start space-x-3 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+                            <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <p className="text-gray-700 leading-relaxed">
+                                <span className="font-semibold">{t.services.rentalService.ourServices.stableAccounts.title}</span> {t.services.rentalService.ourServices.stableAccounts.description}
                             </p>
                         </div>
-                        <div>
-                            <Image
-                                src="/camp.png"
-                                alt="Facebook Ads Campaign Screenshot"
-                                width={600}
-                                height={400}
-                                className="w-full rounded-xl shadow-lg border border-gray-200"
-                            />
+
+                        <div className="flex items-start space-x-3 p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
+                            <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <p className="text-gray-700 leading-relaxed">
+                                <span className="font-semibold">{t.services.rentalService.ourServices.flexibleSpending.title}</span> {t.services.rentalService.ourServices.flexibleSpending.description}
+                            </p>
+                        </div>
+
+                        <div className="flex items-start space-x-3 p-4 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+                            <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <p className="text-gray-700 leading-relaxed">
+                                <span className="font-semibold">{t.services.rentalService.ourServices.fullSetup.title}</span> {t.services.rentalService.ourServices.fullSetup.description}
+                            </p>
+                        </div>
+
+                        <div className="flex items-start space-x-3 p-4 bg-orange-50 rounded-lg border-l-4 border-orange-500">
+                            <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <p className="text-gray-700 leading-relaxed">
+                                <span className="font-semibold">{t.services.rentalService.ourServices.support.title}</span> {t.services.rentalService.ourServices.support.description}
+                            </p>
+                        </div>
+
+                        <div className="flex items-start space-x-3 p-4 bg-red-50 rounded-lg border-l-4 border-red-500">
+                            <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <p className="text-gray-700 leading-relaxed">
+                                <span className="font-semibold">{t.services.rentalService.ourServices.multiIndustry.title}</span> {t.services.rentalService.ourServices.multiIndustry.description}
+                            </p>
+                        </div>
+
+                        <div className="flex items-start space-x-3 p-4 bg-teal-50 rounded-lg border-l-4 border-teal-500">
+                            <div className="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <p className="text-gray-700 leading-relaxed">
+                                <span className="font-semibold">{t.services.rentalService.ourServices.underYourEmail.title}</span> {t.services.rentalService.ourServices.underYourEmail.description}
+                            </p>
+                        </div>
+
+                        <div className="flex items-start space-x-3 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                            <div className="w-2 h-2 bg-indigo-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <p className="text-gray-700 leading-relaxed">
+                                <span className="font-semibold">{t.services.rentalService.ourServices.dedicatedTeam.title}</span> {t.services.rentalService.ourServices.dedicatedTeam.description}
+                            </p>
+                        </div>
+
+                        <div className="flex items-start space-x-3 p-4 bg-pink-50 rounded-lg border-l-4 border-pink-500 md:col-span-2">
+                            <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <p className="text-gray-700 leading-relaxed">
+                                <span className="font-semibold">{t.services.rentalService.ourServices.integratedTech.title}</span> {t.services.rentalService.ourServices.integratedTech.description}
+                            </p>
                         </div>
                     </div>
                 </div>

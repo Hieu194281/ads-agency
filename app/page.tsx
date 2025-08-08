@@ -185,32 +185,54 @@ export default function Home() {
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">{t.whyUs.subtitle}</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="text-blue-600 text-4xl mb-4">
-                <i className="fas fa-trophy"></i>
+          <div className="space-y-8">
+            {/* First row - 3 items */}
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-white p-8 rounded-lg shadow-sm">
+                <div className="text-blue-600 text-4xl mb-4">
+                  <i className="fas fa-trophy"></i>
+                </div>
+                <h3 className="text-xl font-bold mb-3">{t.whyUs.provenResults.title}</h3>
+                <p className="text-gray-600">{t.whyUs.provenResults.description}</p>
               </div>
-              <h3 className="text-xl font-bold mb-3">{t.whyUs.provenResults.title}</h3>
-              <p className="text-gray-600">{t.whyUs.provenResults.description}</p>
+
+              <div className="bg-white p-8 rounded-lg shadow-sm">
+                <div className="text-blue-600 text-4xl mb-4">
+                  <i className="fas fa-lightbulb"></i>
+                </div>
+                <h3 className="text-xl font-bold mb-3">{t.whyUs.strategicApproach.title}</h3>
+                <p className="text-gray-600">{t.whyUs.strategicApproach.description}</p>
+              </div>
+
+              <div className="bg-white p-8 rounded-lg shadow-sm">
+                <div className="text-blue-600 text-4xl mb-4">
+                  <i className="fas fa-headset"></i>
+                </div>
+                <h3 className="text-xl font-bold mb-3">{t.whyUs.dedicatedSupport.title}</h3>
+                <p className="text-gray-600">{t.whyUs.dedicatedSupport.description}</p>
+              </div>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="text-blue-600 text-4xl mb-4">
-                <i className="fas fa-lightbulb"></i>
+            {/* Second row - 2 items centered */}
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div className="bg-white p-8 rounded-lg shadow-sm">
+                <div className="text-blue-600 text-4xl mb-4">
+                  <i className="fas fa-shield-alt"></i>
+                </div>
+                <h3 className="text-xl font-bold mb-3">{t.whyUs.accountQuality.title}</h3>
+                <p className="text-gray-600">{t.whyUs.accountQuality.description}</p>
               </div>
-              <h3 className="text-xl font-bold mb-3">{t.whyUs.strategicApproach.title}</h3>
-              <p className="text-gray-600">{t.whyUs.strategicApproach.description}</p>
-            </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="text-blue-600 text-4xl mb-4">
-                <i className="fas fa-headset"></i>
+              <div className="bg-white p-8 rounded-lg shadow-sm">
+                <div className="text-blue-600 text-4xl mb-4">
+                  <i className="fas fa-clock"></i>
+                </div>
+                <h3 className="text-xl font-bold mb-3">{t.whyUs.support.title}</h3>
+                <p className="text-gray-600">{t.whyUs.support.description}</p>
               </div>
-              <h3 className="text-xl font-bold mb-3">{t.whyUs.dedicatedSupport.title}</h3>
-              <p className="text-gray-600">{t.whyUs.dedicatedSupport.description}</p>
             </div>
           </div>
-
+          {/* 
           <div className="mt-16 bg-white rounded-lg shadow-md overflow-hidden">
             <div className="md:flex">
               <div className="md:w-1/2 p-10 bg-indigo-600 text-white">
@@ -257,7 +279,7 @@ export default function Home() {
                 <a href="#contact" className="text-indigo-600 font-semibold hover:underline">{t.whyUs.caseStudy.cta}</a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -300,21 +322,21 @@ export default function Home() {
                   <div className="space-y-6">
                     <div className="flex items-start">
                       <div className="text-2xl mr-4">
-                        <i className="fas fa-phone"></i>
+                        <i className="fab fa-whatsapp"></i>
                       </div>
                       <div>
-                        <p className="font-semibold">{t.contact.contactInfo.phone}</p>
-                        <p>(123) 456-7890</p>
+                        <p className="font-semibold">{t.contact.contactInfo.whatsapp}</p>
+                        <p>+84 96 1439036</p>
                       </div>
                     </div>
 
                     <div className="flex items-start">
                       <div className="text-2xl mr-4">
-                        <i className="fas fa-envelope"></i>
+                        <i className="fab fa-telegram-plane"></i>
                       </div>
                       <div>
-                        <p className="font-semibold">{t.contact.contactInfo.email}</p>
-                        <p>hello@adsagency.com</p>
+                        <p className="font-semibold">{t.contact.contactInfo.telegram}</p>
+                        <p>adsagency888@gmail.com</p>
                       </div>
                     </div>
                   </div>
@@ -322,22 +344,52 @@ export default function Home() {
                 <div className='mt-8'>
                   <h2 className="text-3xl font-bold mb-6">{t.contact.title2}</h2>
 
-                  <div className="space-y-6">
-                    <div className="flex items-start">
-                      <a href="https://t.me/ads_agency88" target="_blank" rel="noopener noreferrer">
-                        <div className="text-3xl mr-4">
-                          <i className="fab fa-telegram-plane"></i>
-                        </div>
+                  <div className="grid grid-cols-2 gap-6">
+                    {/* Telegram QR */}
+                    <div className="flex flex-col items-center p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
+                      <div className="w-20 h-20 mb-3 bg-white rounded-xl p-2 shadow-lg">
+                        <Image
+                          src="/telegram.png"
+                          alt="Telegram QR Code"
+                          width={80}
+                          height={80}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <h3 className="font-semibold text-lg mb-1">{t.contact.telegram}</h3>
+                      <p className="text-sm opacity-80 text-center">{t.contact.scanToChat.telegram}</p>
+                      <a
+                        href="https://t.me/ads_agency88"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-2 text-xs bg-white/20 px-3 py-1 rounded-full hover:bg-white/30 transition-colors"
+                      >
+                        @ads_agency88
                       </a>
-
-                      <a href="https://api.whatsapp.com/qr/NHL6E2RK3MTWP1?autoload=1&app_absent=0" target="_blank" rel="noopener noreferrer">
-                        <div className="text-3xl mr-4">
-                          <i className="fab fa-whatsapp"></i>
-                        </div>
-                      </a>
-
                     </div>
 
+                    {/* WhatsApp QR */}
+                    <div className="flex flex-col items-center p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
+                      <div className="w-20 h-20 mb-3 bg-white rounded-xl p-2 shadow-lg">
+                        <Image
+                          src="/whatapp.png"
+                          alt="WhatsApp QR Code"
+                          width={80}
+                          height={80}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <h3 className="font-semibold text-lg mb-1">{t.contact.contactInfo.whatsapp}</h3>
+                      <p className="text-sm opacity-80 text-center">{t.contact.scanToChat.whatsapp}</p>
+                      <a
+                        href="https://api.whatsapp.com/send/?phone=84961439036&text&type=phone_number&app_absent=0"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-2 text-xs bg-white/20 px-3 py-1 rounded-full hover:bg-white/30 transition-colors"
+                      >
+                        +84 96 1439036
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -348,7 +400,7 @@ export default function Home() {
                   <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-md">
                     <div className="flex items-center">
                       <i className="fas fa-check-circle mr-2"></i>
-                      <span>Cảm ơn bạn! Tin nhắn đã được gửi thành công. Chúng tôi sẽ liên hệ lại sớm nhất có thể.</span>
+                      <span>{t.contact.form.success}</span>
                     </div>
                   </div>
                 )}
@@ -447,7 +499,7 @@ export default function Home() {
                     {isSubmitting ? (
                       <div className="flex items-center justify-center">
                         <i className="fas fa-spinner fa-spin mr-2"></i>
-                        Đang gửi...
+                        {t.contact.form.submitting}
                       </div>
                     ) : (
                       t.contact.form.submit
@@ -493,26 +545,54 @@ export default function Home() {
 
             <div>
               <h4 className="font-semibold mb-4">{t.footer.connectWithUs}</h4>
-              <div className="flex space-x-4 mb-4">
-                <a href="https://t.me/ads_agency88" target="_blank" rel="noopener noreferrer">
-                  <div className="text-3xl">
-                    <i className="fab fa-telegram-plane"></i>
+              <div className="grid grid-cols-1 gap-4">
+                {/* Telegram QR */}
+                <div className="flex items-center p-3 bg-gray-800 rounded-lg border border-gray-700 hover:bg-gray-750 transition-all duration-300">
+                  <div className="w-12 h-12 mr-3 bg-white rounded-lg p-1 shadow-md flex-shrink-0">
+                    <Image
+                      src="/telegram.png"
+                      alt="Telegram QR Code"
+                      width={48}
+                      height={48}
+                      className="w-full h-full object-contain"
+                    />
                   </div>
-                </a>
+                  <div className="flex-1 min-w-0">
+                    <h5 className="font-medium text-white text-sm">{t.contact.telegram}</h5>
+                    <a
+                      href="https://t.me/ads_agency88"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-gray-400 hover:text-white transition-colors truncate block"
+                    >
+                      @ads_agency88
+                    </a>
+                  </div>
+                </div>
 
-                <a href="https://api.whatsapp.com/qr/NHL6E2RK3MTWP1?autoload=1&app_absent=0" target="_blank" rel="noopener noreferrer">
-                  <div className="text-3xl mr-4">
-                    <i className="fab fa-whatsapp"></i>
+                {/* WhatsApp QR */}
+                <div className="flex items-center p-3 bg-gray-800 rounded-lg border border-gray-700 hover:bg-gray-750 transition-all duration-300">
+                  <div className="w-12 h-12 mr-3 bg-white rounded-lg p-1 shadow-md flex-shrink-0">
+                    <Image
+                      src="/whatapp.png"
+                      alt="WhatsApp QR Code"
+                      width={48}
+                      height={48}
+                      className="w-full h-full object-contain"
+                    />
                   </div>
-                </a>
-                {/* <a href="#" className="text-gray-400 hover:text-white transition text-xl"><i
-                  className="fab fa-facebook-f"></i></a>
-                <a href="#" className="text-gray-400 hover:text-white transition text-xl"><i
-                  className="fab fa-twitter"></i></a>
-                <a href="#" className="text-gray-400 hover:text-white transition text-xl"><i
-                  className="fab fa-instagram"></i></a>
-                <a href="#" className="text-gray-400 hover:text-white transition text-xl"><i
-                  className="fab fa-linkedin-in"></i></a> */}
+                  <div className="flex-1 min-w-0">
+                    <h5 className="font-medium text-white text-sm">WhatsApp</h5>
+                    <a
+                      href="https://api.whatsapp.com/send/?phone=84961439036&text&type=phone_number&app_absent=0"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-gray-400 hover:text-white transition-colors truncate block"
+                    >
+                      +84 96 1439036
+                    </a>
+                  </div>
+                </div>
               </div>
               {/* <p className="text-gray-400">{t.footer.newsletter}</p>
               <form className="mt-2 flex">

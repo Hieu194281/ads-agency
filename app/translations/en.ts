@@ -54,7 +54,7 @@ export const en = {
     // Facebook Rental Service
     rentalService: {
       title: "Facebook Rental Service",
-      description: "Facebook Ad Account Rental Service In the vast digital landscape, one platform connects people across the globe — Facebook. For businesses, it's more than just a social network; it's a powerful marketing channel. Unlock your advertising potential with ADS Agency Media's Facebook ad account rental service. Whether you're facing restrictions or simply want a smoother experience — we've got your back.",
+      description: "Facebook Ad Account Rental Service In the vast digital landscape, one platform connects people across the globe — Facebook. For businesses, it's more than just a social network; it's a powerful marketing channel. Unlock your advertising potential with ADS Agency's Facebook ad account rental service. Whether you're facing restrictions or simply want a smoother experience — we've got your back.",
 
       features: {
         allProduct: {
@@ -92,8 +92,43 @@ export const en = {
 
       facebookPageService: {
         title: "Facebook Page Service",
-        description: "ADS Agency Media offers effective advertising services through a network of highly trusted fanpages. You can launch your campaigns without facing common issues such as restrictions, limited delivery, or disapprovals. Our experienced support team is fast, reliable, and ready to assist with every aspect of your advertising campaigns.",
+        description: "ADS Agency offers effective advertising services through a network of highly trusted fanpages. You can launch your campaigns without facing common issues such as restrictions, limited delivery, or disapprovals. Our experienced support team is fast, reliable, and ready to assist with every aspect of your advertising campaigns.",
         note: "*Always reserve a stable number of >1000 accounts with spending history ( Accept BH, WH, GH : Gambling, Crypto, App, NFT, Finance..... ), Support campaign optimization for customers - 24/7 Support."
+      },
+      ourServices: {
+        title: "OUR SERVICES",
+        stableAccounts: {
+          title: "Stable Facebook ad accounts",
+          description: "with real spending history."
+        },
+        flexibleSpending: {
+          title: "Flexible daily spending limits:",
+          description: "$250 – $1,500 – unlimited options."
+        },
+        fullSetup: {
+          title: "Fully prepared setup:",
+          description: "BM, fanpage, verified card, Adspower, clean proxy."
+        },
+        support: {
+          title: "24/7 technical support,",
+          description: "from setup to scaling."
+        },
+        multiIndustry: {
+          title: "Support for multiple verticals:",
+          description: "BH, WH, GH ad services (gaming, crypto, supplements)..."
+        },
+        underYourEmail: {
+          title: "Accounts created",
+          description: "under your own email"
+        },
+        dedicatedTeam: {
+          title: "Dedicated teams",
+          description: "(support, technical, finance) for each client."
+        },
+        integratedTech: {
+          title: "Integrated Iridescent technology:",
+          description: "pixel setup, campaign automation, and live monitoring."
+        }
       }
     }
   },
@@ -114,6 +149,15 @@ export const en = {
     dedicatedSupport: {
       title: "Dedicated Support",
       description: "You'll work directly with our team of Facebook ads experts who provide transparent communication and regular updates."
+    },
+
+    accountQuality: {
+      title: "100% Account Quality",
+      description: "Account quality guarantee with replacement if any issues arise"
+    },
+    support: {
+      title: "24/7 Support",
+      description: "Round-the-clock customer support to address any issues and ensure your campaigns run smoothly."
     },
 
     performanceMetrics: {
@@ -140,7 +184,7 @@ export const en = {
     }
   },
 
-  // About Section
+  // '''  // About Section
   about: {
     title: "About ADS Agency",
     description1: "We're a team of Facebook advertising specialists dedicated to helping businesses grow through strategic paid social campaigns.",
@@ -161,8 +205,15 @@ export const en = {
     contactInfo: {
       phone: "Phone",
       email: "Email",
-      location: "Location"
+      location: "Location",
+      whatsapp: 'WhatsApp'
     },
+
+    scanToChat: {
+      telegram: 'Scan to chat on Telegram',
+      whatsapp: 'Scan to chat on WhatsApp'
+    },
+    telegram: 'Telegram',
 
     form: {
       name: "Your Name",
@@ -184,7 +235,7 @@ export const en = {
     }
   },
 
-  // Facebook Rental Service
+  // Facebook Rental Service'''
   facebookRental: {
     title: "Facebook Rental Service",
     subtitle: "Rent high-quality Facebook accounts for your advertising campaigns",
