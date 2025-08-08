@@ -153,7 +153,7 @@ export const vi = {
 
     accountQuality: {
       title: "Chất lượng tài khoản 100%",
-      description: "Đảm bảo chất lượng tài khoản và thay thế nếu có vấn đề phát sinh"
+      description: "Đảm bảo chất lượng tài khoản và thay thế nhanh chóng, hoàn toàn miễn phí nếu có vấn đề phát sinh"
     },
     support: {
       title: "Hỗ trợ 24/7",
